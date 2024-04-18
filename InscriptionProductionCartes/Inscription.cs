@@ -621,6 +621,11 @@ namespace InscriptionProductionCartes
         {
             SelectImg();
         }
+
+        private void minimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
     public class DataForm
     {

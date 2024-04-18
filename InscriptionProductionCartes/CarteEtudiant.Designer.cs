@@ -118,7 +118,7 @@
             this.nomBox.Location = new System.Drawing.Point(16, 194);
             this.nomBox.Name = "nomBox";
             this.nomBox.ReadOnly = true;
-            this.nomBox.Size = new System.Drawing.Size(183, 25);
+            this.nomBox.Size = new System.Drawing.Size(239, 25);
             this.nomBox.TabIndex = 6;
             this.nomBox.TabStop = false;
             this.nomBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

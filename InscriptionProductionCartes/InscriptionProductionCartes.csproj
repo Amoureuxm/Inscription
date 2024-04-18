@@ -60,19 +60,37 @@
     <Compile Include="CarteEtudiant.Designer.cs">
       <DependentUpon>CarteEtudiant.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.Designer.cs">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inscription.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inscription.Designer.cs">
       <DependentUpon>Inscription.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CarteEtudiant.resx">
       <DependentUpon>CarteEtudiant.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChangePwd.resx">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inscription.resx">
       <DependentUpon>Inscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

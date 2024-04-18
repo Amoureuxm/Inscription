@@ -81,6 +81,7 @@
             this.matriculeLab = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.minimize = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FicheInscription)).BeginInit();
@@ -790,15 +791,30 @@
             this.textBox1.TabStop = false;
             this.textBox1.Visible = false;
             // 
+            // minimize
+            // 
+            this.minimize.BackColor = System.Drawing.Color.MidnightBlue;
+            this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minimize.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.minimize.Location = new System.Drawing.Point(880, -2);
+            this.minimize.Name = "minimize";
+            this.minimize.Size = new System.Drawing.Size(49, 41);
+            this.minimize.TabIndex = 67;
+            this.minimize.Text = "-";
+            this.minimize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.minimize.UseVisualStyleBackColor = false;
+            this.minimize.Click += new System.EventHandler(this.minimize_Click);
+            // 
             // Inscription
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(926, 545);
+            this.Controls.Add(this.minimize);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Inscription";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscription";
@@ -867,6 +883,7 @@
         private System.Windows.Forms.MaskedTextBox pourcentBox;
         private System.Windows.Forms.Button printCard;
         private System.Windows.Forms.Button btnImage;
+        private System.Windows.Forms.Button minimize;
     }
 }
 
