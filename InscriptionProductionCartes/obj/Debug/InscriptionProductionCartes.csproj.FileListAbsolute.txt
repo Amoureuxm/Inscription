@@ -38,3 +38,17 @@ H:\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\Inscription
 H:\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Login.resources
 H:\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Properties.Resources.resources
 H:\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.GenerateResource.Cache
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\bin\Debug\InscriptionProductionCartes.exe.config
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.ResolveComReference.cache
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.exe
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.pdb
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\bin\Debug\InscriptionProductionCartes.exe
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\bin\Debug\InscriptionProductionCartes.pdb
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\bin\Debug\QRCoder.dll
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csprojResolveAssemblyReference.cache
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.CarteEtudiant.resources
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.ChangePwd.resources
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Inscription.resources
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Login.resources
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Properties.Resources.resources
+C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.GenerateResource.Cache
