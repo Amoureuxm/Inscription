@@ -581,40 +581,6 @@ namespace InscriptionProductionCartes
             CarteEtudiant carte = new CarteEtudiant(this);
             carte.Show();
             
-            /*
-
-            // Capturer le contenu du formulaire en tant qu'image
-            Bitmap bmp = new Bitmap(this.Width, this.Height);
-            this.DrawToBitmap(bmp, new Rectangle(0, 0, this.Width, this.Height));
-
-            // Préparer l'impression
-            PrintDocument printDoc = new PrintDocument();
-            printDoc.DefaultPageSettings.Landscape = true;
-            //printDoc.PrintController += ;
-            printDoc.PrintPage += (s, eArgs) =>
-            {
-                // Calculer les dimensions pour imprimer l'image en entier
-                Rectangle pageArea = eArgs.PageBounds;
-                float ratio = Math.Min((float)pageArea.Width / bmp.Width, (float)pageArea.Height / bmp.Height);
-                int printWidth = (int)(bmp.Width * ratio);
-                int printHeight = (int)(bmp.Height * ratio);
-                int marginLeft = (pageArea.Width - printWidth) / 2;
-                int marginTop = (pageArea.Height - printHeight) / 2;
-
-                // Dessiner l'image sur le document d'impression
-                eArgs.Graphics.DrawImage(bmp, marginLeft, marginTop, printWidth, printHeight);
-                eArgs.HasMorePages = false;
-            };
-
-            // Afficher la boîte de dialogue d'impression
-            PrintDialog printDialog = new PrintDialog();
-            printDialog.Document = printDoc;
-            if (printDialog.ShowDialog() == DialogResult.OK)
-            {
-                printDoc.Print();
-            }
-
-        */
         }
 
         private void btnImage_Click(object sender, EventArgs e)
