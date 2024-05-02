@@ -52,3 +52,5 @@ C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\Inscr
 C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Login.resources
 C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Properties.Resources.resources
 C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.GenerateResource.Cache
+C:\Users\PHIL BAUMA\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.ChangePwd.resources
+C:\Users\PHIL BAUMA\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Login.resources
