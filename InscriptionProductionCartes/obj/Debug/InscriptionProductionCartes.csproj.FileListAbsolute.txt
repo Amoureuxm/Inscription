@@ -54,3 +54,17 @@ C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\Inscr
 C:\Users\PHIL BAUMA\Documents\Examen\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.GenerateResource.Cache
 C:\Users\PHIL BAUMA\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.ChangePwd.resources
 C:\Users\PHIL BAUMA\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Login.resources
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\bin\Debug\InscriptionProductionCartes.exe.config
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.ResolveComReference.cache
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.exe
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.pdb
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\bin\Debug\InscriptionProductionCartes.exe
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\bin\Debug\InscriptionProductionCartes.pdb
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\bin\Debug\QRCoder.dll
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csprojResolveAssemblyReference.cache
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.CarteEtudiant.resources
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.ChangePwd.resources
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Inscription.resources
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Login.resources
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.Properties.Resources.resources
+C:\Users\T470s\Documents\Visual Studio 2015\Projects\InscriptionProductionCartes\InscriptionProductionCartes\obj\Debug\InscriptionProductionCartes.csproj.GenerateResource.Cache

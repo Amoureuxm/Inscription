@@ -67,25 +67,24 @@ namespace InscriptionProductionCartes
 
         void EditRows()
         {
-            //foreach (DataGridViewRow row in FicheInscription.Rows)
-            //{
+            
             try
             {
-                //        if (row.IsNewRow)
-                //        {
-                int row = FicheInscription.Rows.GetRowCount(DataGridViewElementStates.Selected);
 
-                string matricule = FicheInscription.Rows[row].Cells["Matricule"].Value.ToString();
-                string nom = FicheInscription.Rows[row].Cells["Nom"].Value.ToString();
-                string postnom = FicheInscription.Rows[row].Cells["Postnom"].Value?.ToString();
-                string prenom = FicheInscription.Rows[row].Cells["Prenom"].Value.ToString();
+                Font text = new Font("Microsoft Sans Serif", 9);
+                int row = FicheInscription.CurrentCell.RowIndex;
+
+                string matricule = FicheInscription.Rows[row].Cells[0].Value.ToString();
+                string nom = FicheInscription.Rows[row].Cells[1].Value.ToString();
+                string postnom = FicheInscription.Rows[row].Cells[2].Value?.ToString();
+                string prenom = FicheInscription.Rows[row].Cells[3].Value.ToString();
                 string promotion = FicheInscription.Rows[row].Cells["Promotion"].Value.ToString();
                 string numEtudiant = FicheInscription.Rows[row].Cells["N° Étudiant"].Value.ToString();
                 string genre = FicheInscription.Rows[row].Cells["Genre"].Value.ToString();
                 string date = FicheInscription.Rows[row].Cells[5].Value.ToString();
                 string lieuNaissance = FicheInscription.Rows[row].Cells[6].Value.ToString();
                 string etatCivil = FicheInscription.Rows[row].Cells["Etat civil"].Value.ToString();
-                string Addresse = FicheInscription.Rows[row].Cells["Addresse"].Value.ToString();
+                string addresse = FicheInscription.Rows[row].Cells["Addresse"].Value.ToString();
                 string phone = FicheInscription.Rows[row].Cells["N° Tel"].Value.ToString();
                 string nomPere = FicheInscription.Rows[row].Cells["Nom du père"].Value.ToString();
                 string nomMere = FicheInscription.Rows[row].Cells["Nom de la mère"].Value.ToString();
@@ -93,7 +92,7 @@ namespace InscriptionProductionCartes
                 string province = FicheInscription.Rows[row].Cells["Province"].Value.ToString();
                 string territoire = FicheInscription.Rows[row].Cells["Territoire"].Value.ToString();
                 string dossier = FicheInscription.Rows[row].Cells["Dossier déposé"].Value.ToString();
-
+                
 
 
                 matriculeBox.Text = matricule;
@@ -106,7 +105,7 @@ namespace InscriptionProductionCartes
                 dateBox.Text = date;
                 lieuBox.Text = lieuNaissance;
                 etatCivilBox.Text = etatCivil;
-                addresseBox.Text = Addresse;
+                addresseBox.Text = addresse;
                 telBox.Text = phone;
                 nomPereBox.Text = nomPere;
                 nomMereBox.Text = nomMere;
@@ -114,12 +113,12 @@ namespace InscriptionProductionCartes
                 provinceBox.Text = province;
                 territoireBox.Text = territoire;
                 dossierBox.Text = dossier;
-
+                
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
             }
         }
 
@@ -282,7 +281,7 @@ namespace InscriptionProductionCartes
                             sheet.Cells[i + 2, j + 1] = FicheInscription.Rows[i].Cells[j].Value.ToString();
                         }
                     }
-                    //sheet.Cells[1, j] = dataGridView1.Rows[i - 1];
+                   
                 }
 
 
@@ -324,6 +323,7 @@ namespace InscriptionProductionCartes
                 {
                     Image tempImg = Image.FromFile(image.FileName);
                     Profil = tempImg;
+                    pictureQR.Image = tempImg;
                     //etudiantPicture.Image = new Bitmap(image.FileName);
                 }
             }
@@ -465,6 +465,81 @@ namespace InscriptionProductionCartes
         private void minimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            // Vérifiez s'il y a une ligne sélectionnée
+            if (FicheInscription.SelectedRows.Count > 0)
+            {
+                // Récupérez l'index de la ligne sélectionnée
+                int selectedIndex = FicheInscription.SelectedRows[0].Index;
+
+                // Assurez-vous que l'index est valide
+                if (selectedIndex >= 0)
+                {
+                    // Récupérez les nouvelles valeurs des TextBox
+                   string matricule = matriculeBox.Text;
+                    string nom = nomBox.Text;
+                    string postnom = postNomBox.Text;
+                    string prenom = prenomBox.Text;
+                    string promotion = promotionBox.Text;
+                    string numEtudiant = numEtudiantBox.Text;
+                    string genre = genreBox.Text;
+                    string date = dateBox.Text;
+                    string lieuNaissance = lieuBox.Text;
+                    string etatCivil = etatCivilBox.Text;
+                    string addresse = addresseBox.Text;
+                    string phone = telBox.Text;
+                    string nomPere = nomPereBox.Text;
+                    string nomMere = nomMereBox.Text;
+                    string pourcentage = pourcentBox.Text;
+                    string province = provinceBox.Text;
+                    string territoire = territoireBox.Text;
+                    string dossier = dossierBox.Text;
+                    // Ajoutez d'autres TextBox si nécessaire
+
+                    // Mettez à jour les cellules de la ligne sélectionnée avec les nouvelles valeurs
+                    FicheInscription.Rows[selectedIndex].Cells[0].Value = matricule;
+                    FicheInscription.Rows[selectedIndex].Cells[1].Value = nom;
+                    FicheInscription.Rows[selectedIndex].Cells[2].Value = postnom;
+                    FicheInscription.Rows[selectedIndex].Cells[3].Value = prenom;
+                    FicheInscription.Rows[selectedIndex].Cells[4].Value = promotion;
+                    FicheInscription.Rows[selectedIndex].Cells[5].Value = numEtudiant;
+                    FicheInscription.Rows[selectedIndex].Cells[6].Value = genre;
+                    FicheInscription.Rows[selectedIndex].Cells[7].Value = date;
+                    FicheInscription.Rows[selectedIndex].Cells[8].Value = lieuNaissance;
+                    FicheInscription.Rows[selectedIndex].Cells[9].Value = etatCivil;
+                    FicheInscription.Rows[selectedIndex].Cells[10].Value = addresse;
+                    FicheInscription.Rows[selectedIndex].Cells[11].Value = phone;
+                    FicheInscription.Rows[selectedIndex].Cells[12].Value = nomPere;
+                    FicheInscription.Rows[selectedIndex].Cells[13].Value = nomMere;
+                    FicheInscription.Rows[selectedIndex].Cells[14].Value = pourcentage;
+                    FicheInscription.Rows[selectedIndex].Cells[15].Value = province;
+                    FicheInscription.Rows[selectedIndex].Cells[16].Value = territoire;
+                    FicheInscription.Rows[selectedIndex].Cells[17].Value = dossier;
+                    // Ajoutez d'autres colonnes si nécessaire
+
+                    // Optionnel: Vous pouvez également rafraîchir le DataGridView pour afficher les modifications
+                    FicheInscription.Refresh();
+                }
+                else
+                {
+                    MessageBox.Show("Veuillez sélectionner une ligne valide.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Veuillez sélectionner une ligne à mettre à jour.");
+            }
+    }
+
+
+
+
+    private void FicheInscription_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            EditRows();
         }
     }
     public class DataForm

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnModifier = new System.Windows.Forms.Button();
             this.btnImage = new System.Windows.Forms.Button();
             this.printCard = new System.Windows.Forms.Button();
             this.fraisBox = new System.Windows.Forms.MaskedTextBox();
@@ -90,6 +91,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel1.Controls.Add(this.btnModifier);
             this.panel1.Controls.Add(this.btnImage);
             this.panel1.Controls.Add(this.printCard);
             this.panel1.Controls.Add(this.fraisBox);
@@ -141,20 +143,36 @@
             this.panel1.Controls.Add(this.nomLab);
             this.panel1.Controls.Add(this.matriculeLab);
             this.panel1.ForeColor = System.Drawing.SystemColors.Info;
-            this.panel1.Location = new System.Drawing.Point(-2, 45);
+            this.panel1.Location = new System.Drawing.Point(-3, 69);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(931, 501);
+            this.panel1.Size = new System.Drawing.Size(1396, 771);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnModifier
+            // 
+            this.btnModifier.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifier.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnModifier.Location = new System.Drawing.Point(84, 614);
+            this.btnModifier.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(120, 43);
+            this.btnModifier.TabIndex = 67;
+            this.btnModifier.Text = "Modifier";
+            this.btnModifier.UseVisualStyleBackColor = false;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnImage
             // 
             this.btnImage.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImage.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnImage.Location = new System.Drawing.Point(380, 331);
+            this.btnImage.Location = new System.Drawing.Point(570, 509);
+            this.btnImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnImage.Name = "btnImage";
-            this.btnImage.Size = new System.Drawing.Size(80, 28);
+            this.btnImage.Size = new System.Drawing.Size(120, 43);
             this.btnImage.TabIndex = 66;
             this.btnImage.Text = "Profil";
             this.btnImage.UseVisualStyleBackColor = false;
@@ -165,9 +183,10 @@
             this.printCard.BackColor = System.Drawing.Color.MidnightBlue;
             this.printCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printCard.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.printCard.Location = new System.Drawing.Point(466, 331);
+            this.printCard.Location = new System.Drawing.Point(699, 509);
+            this.printCard.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.printCard.Name = "printCard";
-            this.printCard.Size = new System.Drawing.Size(80, 28);
+            this.printCard.Size = new System.Drawing.Size(120, 43);
             this.printCard.TabIndex = 65;
             this.printCard.Text = "Imprimer";
             this.printCard.UseVisualStyleBackColor = false;
@@ -176,20 +195,22 @@
             // fraisBox
             // 
             this.fraisBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fraisBox.Location = new System.Drawing.Point(643, 111);
+            this.fraisBox.Location = new System.Drawing.Point(964, 171);
+            this.fraisBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.fraisBox.Mask = "000 000 000";
             this.fraisBox.Name = "fraisBox";
-            this.fraisBox.Size = new System.Drawing.Size(120, 22);
+            this.fraisBox.Size = new System.Drawing.Size(178, 30);
             this.fraisBox.TabIndex = 64;
             this.fraisBox.TabStop = false;
             // 
             // pourcentBox
             // 
             this.pourcentBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pourcentBox.Location = new System.Drawing.Point(314, 187);
+            this.pourcentBox.Location = new System.Drawing.Point(471, 288);
+            this.pourcentBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pourcentBox.Mask = "000";
             this.pourcentBox.Name = "pourcentBox";
-            this.pourcentBox.Size = new System.Drawing.Size(134, 22);
+            this.pourcentBox.Size = new System.Drawing.Size(199, 30);
             this.pourcentBox.TabIndex = 63;
             this.pourcentBox.TabStop = false;
             // 
@@ -201,17 +222,19 @@
             this.genreBox.Items.AddRange(new object[] {
             "M",
             "F"});
-            this.genreBox.Location = new System.Drawing.Point(95, 184);
+            this.genreBox.Location = new System.Drawing.Point(142, 283);
+            this.genreBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.genreBox.Name = "genreBox";
-            this.genreBox.Size = new System.Drawing.Size(43, 28);
+            this.genreBox.Size = new System.Drawing.Size(62, 37);
             this.genreBox.TabIndex = 62;
             this.genreBox.TabStop = false;
             // 
             // pictureQR
             // 
-            this.pictureQR.Location = new System.Drawing.Point(466, 375);
+            this.pictureQR.Location = new System.Drawing.Point(901, 587);
+            this.pictureQR.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureQR.Name = "pictureQR";
-            this.pictureQR.Size = new System.Drawing.Size(107, 100);
+            this.pictureQR.Size = new System.Drawing.Size(160, 154);
             this.pictureQR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureQR.TabIndex = 60;
             this.pictureQR.TabStop = false;
@@ -220,9 +243,10 @@
             // 
             this.emailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.emailBox.Location = new System.Drawing.Point(643, 182);
+            this.emailBox.Location = new System.Drawing.Point(964, 280);
+            this.emailBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(120, 20);
+            this.emailBox.Size = new System.Drawing.Size(178, 26);
             this.emailBox.TabIndex = 59;
             this.emailBox.TabStop = false;
             this.emailBox.Text = "yourMail@gmail.com";
@@ -235,9 +259,10 @@
             this.emailLab.BackColor = System.Drawing.Color.Transparent;
             this.emailLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.emailLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLab.Location = new System.Drawing.Point(518, 181);
+            this.emailLab.Location = new System.Drawing.Point(777, 278);
+            this.emailLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emailLab.Name = "emailLab";
-            this.emailLab.Size = new System.Drawing.Size(43, 21);
+            this.emailLab.Size = new System.Drawing.Size(63, 32);
             this.emailLab.TabIndex = 58;
             this.emailLab.Text = "Frais";
             // 
@@ -245,9 +270,10 @@
             // 
             this.promotionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.promotionBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.promotionBox.Location = new System.Drawing.Point(643, 41);
+            this.promotionBox.Location = new System.Drawing.Point(964, 63);
+            this.promotionBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.promotionBox.Name = "promotionBox";
-            this.promotionBox.Size = new System.Drawing.Size(120, 22);
+            this.promotionBox.Size = new System.Drawing.Size(178, 30);
             this.promotionBox.TabIndex = 57;
             this.promotionBox.TabStop = false;
             this.promotionBox.Text = "Votre promotion";
@@ -258,9 +284,10 @@
             // 
             this.montantLettreBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.montantLettreBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.montantLettreBox.Location = new System.Drawing.Point(643, 145);
+            this.montantLettreBox.Location = new System.Drawing.Point(964, 223);
+            this.montantLettreBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.montantLettreBox.Name = "montantLettreBox";
-            this.montantLettreBox.Size = new System.Drawing.Size(120, 22);
+            this.montantLettreBox.Size = new System.Drawing.Size(178, 30);
             this.montantLettreBox.TabIndex = 56;
             this.montantLettreBox.TabStop = false;
             this.montantLettreBox.Text = "Montant en lettre";
@@ -271,9 +298,10 @@
             // 
             this.numEtudiantBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numEtudiantBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.numEtudiantBox.Location = new System.Drawing.Point(643, 75);
+            this.numEtudiantBox.Location = new System.Drawing.Point(964, 115);
+            this.numEtudiantBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numEtudiantBox.Name = "numEtudiantBox";
-            this.numEtudiantBox.Size = new System.Drawing.Size(120, 22);
+            this.numEtudiantBox.Size = new System.Drawing.Size(178, 30);
             this.numEtudiantBox.TabIndex = 54;
             this.numEtudiantBox.TabStop = false;
             this.numEtudiantBox.Text = "N° Etudiant";
@@ -283,11 +311,12 @@
             // dateInscription
             // 
             this.dateInscription.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateInscription.Location = new System.Drawing.Point(643, 222);
+            this.dateInscription.Location = new System.Drawing.Point(964, 342);
+            this.dateInscription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateInscription.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.dateInscription.MinDate = new System.DateTime(2024, 1, 1, 0, 0, 0, 0);
             this.dateInscription.Name = "dateInscription";
-            this.dateInscription.Size = new System.Drawing.Size(120, 20);
+            this.dateInscription.Size = new System.Drawing.Size(178, 26);
             this.dateInscription.TabIndex = 53;
             this.dateInscription.TabStop = false;
             this.dateInscription.Value = new System.DateTime(2024, 1, 1, 0, 0, 0, 0);
@@ -298,9 +327,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(518, 224);
+            this.label2.Location = new System.Drawing.Point(777, 345);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 21);
+            this.label2.Size = new System.Drawing.Size(183, 32);
             this.label2.TabIndex = 52;
             this.label2.Text = "Date inscription";
             // 
@@ -310,9 +340,10 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(518, 148);
+            this.label4.Location = new System.Drawing.Point(777, 228);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 21);
+            this.label4.Size = new System.Drawing.Size(204, 32);
             this.label4.TabIndex = 48;
             this.label4.Text = "Montant en lettre";
             // 
@@ -322,9 +353,10 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(518, 110);
+            this.label5.Location = new System.Drawing.Point(777, 169);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 21);
+            this.label5.Size = new System.Drawing.Size(63, 32);
             this.label5.TabIndex = 47;
             this.label5.Text = "Frais";
             // 
@@ -334,9 +366,10 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(518, 74);
+            this.label6.Location = new System.Drawing.Point(777, 114);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(89, 21);
+            this.label6.Size = new System.Drawing.Size(137, 32);
             this.label6.TabIndex = 46;
             this.label6.Text = "N° Etudiant";
             // 
@@ -346,9 +379,10 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(518, 44);
+            this.label7.Location = new System.Drawing.Point(777, 68);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 21);
+            this.label7.Size = new System.Drawing.Size(127, 32);
             this.label7.TabIndex = 45;
             this.label7.Text = "Promotion";
             // 
@@ -357,9 +391,10 @@
             this.btnSave.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnSave.Location = new System.Drawing.Point(300, 331);
+            this.btnSave.Location = new System.Drawing.Point(450, 509);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(67, 28);
+            this.btnSave.Size = new System.Drawing.Size(100, 43);
             this.btnSave.TabIndex = 44;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -370,9 +405,10 @@
             this.btnAdd.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btnAdd.Location = new System.Drawing.Point(218, 331);
+            this.btnAdd.Location = new System.Drawing.Point(327, 509);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(67, 28);
+            this.btnAdd.Size = new System.Drawing.Size(100, 43);
             this.btnAdd.TabIndex = 43;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -383,20 +419,23 @@
             this.FicheInscription.AllowUserToDeleteRows = false;
             this.FicheInscription.BackgroundColor = System.Drawing.SystemColors.Highlight;
             this.FicheInscription.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.FicheInscription.Location = new System.Drawing.Point(166, 375);
+            this.FicheInscription.Location = new System.Drawing.Point(248, 587);
+            this.FicheInscription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.FicheInscription.Name = "FicheInscription";
             this.FicheInscription.ReadOnly = true;
-            this.FicheInscription.Size = new System.Drawing.Size(294, 116);
+            this.FicheInscription.Size = new System.Drawing.Size(645, 288);
             this.FicheInscription.TabIndex = 42;
+            this.FicheInscription.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FicheInscription_CellContentClick);
             this.FicheInscription.Click += new System.EventHandler(this.FicheInscription_Click);
             // 
             // matriculeBox
             // 
             this.matriculeBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matriculeBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.matriculeBox.Location = new System.Drawing.Point(95, 45);
+            this.matriculeBox.Location = new System.Drawing.Point(142, 69);
+            this.matriculeBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.matriculeBox.Name = "matriculeBox";
-            this.matriculeBox.Size = new System.Drawing.Size(120, 22);
+            this.matriculeBox.Size = new System.Drawing.Size(178, 30);
             this.matriculeBox.TabIndex = 39;
             this.matriculeBox.TabStop = false;
             this.matriculeBox.Text = "Matricule Etudiant";
@@ -407,9 +446,10 @@
             // 
             this.prenomBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prenomBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.prenomBox.Location = new System.Drawing.Point(95, 149);
+            this.prenomBox.Location = new System.Drawing.Point(142, 229);
+            this.prenomBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prenomBox.Name = "prenomBox";
-            this.prenomBox.Size = new System.Drawing.Size(120, 22);
+            this.prenomBox.Size = new System.Drawing.Size(178, 30);
             this.prenomBox.TabIndex = 38;
             this.prenomBox.TabStop = false;
             this.prenomBox.Text = "Prenom Etudiant";
@@ -420,9 +460,10 @@
             // 
             this.postNomBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.postNomBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.postNomBox.Location = new System.Drawing.Point(95, 115);
+            this.postNomBox.Location = new System.Drawing.Point(142, 177);
+            this.postNomBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.postNomBox.Name = "postNomBox";
-            this.postNomBox.Size = new System.Drawing.Size(120, 22);
+            this.postNomBox.Size = new System.Drawing.Size(178, 30);
             this.postNomBox.TabIndex = 37;
             this.postNomBox.TabStop = false;
             this.postNomBox.Text = "Postnom Etudiant";
@@ -433,9 +474,10 @@
             // 
             this.nomBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.nomBox.Location = new System.Drawing.Point(95, 79);
+            this.nomBox.Location = new System.Drawing.Point(142, 122);
+            this.nomBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nomBox.Name = "nomBox";
-            this.nomBox.Size = new System.Drawing.Size(120, 22);
+            this.nomBox.Size = new System.Drawing.Size(178, 30);
             this.nomBox.TabIndex = 36;
             this.nomBox.TabStop = false;
             this.nomBox.Text = "Nom Etudiant";
@@ -452,9 +494,10 @@
             "ATTESTATION",
             "BULLETIN 6è",
             "AUCUN"});
-            this.dossierBox.Location = new System.Drawing.Point(314, 294);
+            this.dossierBox.Location = new System.Drawing.Point(471, 452);
+            this.dossierBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dossierBox.Name = "dossierBox";
-            this.dossierBox.Size = new System.Drawing.Size(134, 24);
+            this.dossierBox.Size = new System.Drawing.Size(199, 33);
             this.dossierBox.TabIndex = 34;
             this.dossierBox.TabStop = false;
             // 
@@ -464,9 +507,10 @@
             this.dossierLab.BackColor = System.Drawing.Color.Transparent;
             this.dossierLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dossierLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dossierLab.Location = new System.Drawing.Point(224, 291);
+            this.dossierLab.Location = new System.Drawing.Point(336, 448);
+            this.dossierLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dossierLab.Name = "dossierLab";
-            this.dossierLab.Size = new System.Drawing.Size(62, 21);
+            this.dossierLab.Size = new System.Drawing.Size(93, 32);
             this.dossierLab.TabIndex = 33;
             this.dossierLab.Text = "Dossier";
             // 
@@ -474,9 +518,10 @@
             // 
             this.territoireBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.territoireBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.territoireBox.Location = new System.Drawing.Point(314, 260);
+            this.territoireBox.Location = new System.Drawing.Point(471, 400);
+            this.territoireBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.territoireBox.Name = "territoireBox";
-            this.territoireBox.Size = new System.Drawing.Size(134, 22);
+            this.territoireBox.Size = new System.Drawing.Size(199, 30);
             this.territoireBox.TabIndex = 32;
             this.territoireBox.TabStop = false;
             this.territoireBox.Text = "Territoire d\'origine";
@@ -489,9 +534,10 @@
             this.territoireLab.BackColor = System.Drawing.Color.Transparent;
             this.territoireLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.territoireLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.territoireLab.Location = new System.Drawing.Point(224, 257);
+            this.territoireLab.Location = new System.Drawing.Point(336, 395);
+            this.territoireLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.territoireLab.Name = "territoireLab";
-            this.territoireLab.Size = new System.Drawing.Size(74, 21);
+            this.territoireLab.Size = new System.Drawing.Size(112, 32);
             this.territoireLab.TabIndex = 31;
             this.territoireLab.Text = "Territoire";
             // 
@@ -499,9 +545,10 @@
             // 
             this.provinceBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.provinceBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.provinceBox.Location = new System.Drawing.Point(314, 224);
+            this.provinceBox.Location = new System.Drawing.Point(471, 345);
+            this.provinceBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.provinceBox.Name = "provinceBox";
-            this.provinceBox.Size = new System.Drawing.Size(134, 22);
+            this.provinceBox.Size = new System.Drawing.Size(199, 30);
             this.provinceBox.TabIndex = 30;
             this.provinceBox.TabStop = false;
             this.provinceBox.Text = "Province d\'origine";
@@ -514,9 +561,10 @@
             this.provinceLab.BackColor = System.Drawing.Color.Transparent;
             this.provinceLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.provinceLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.provinceLab.Location = new System.Drawing.Point(224, 222);
+            this.provinceLab.Location = new System.Drawing.Point(336, 342);
+            this.provinceLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.provinceLab.Name = "provinceLab";
-            this.provinceLab.Size = new System.Drawing.Size(70, 21);
+            this.provinceLab.Size = new System.Drawing.Size(106, 32);
             this.provinceLab.TabIndex = 29;
             this.provinceLab.Text = "Province";
             // 
@@ -526,28 +574,31 @@
             this.pourcentLab.BackColor = System.Drawing.Color.Transparent;
             this.pourcentLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pourcentLab.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pourcentLab.Location = new System.Drawing.Point(224, 187);
+            this.pourcentLab.Location = new System.Drawing.Point(336, 288);
+            this.pourcentLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pourcentLab.Name = "pourcentLab";
-            this.pourcentLab.Size = new System.Drawing.Size(81, 17);
+            this.pourcentLab.Size = new System.Drawing.Size(122, 27);
             this.pourcentLab.TabIndex = 27;
             this.pourcentLab.Text = "Pourcentage";
             // 
             // telBox
             // 
             this.telBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telBox.Location = new System.Drawing.Point(314, 80);
+            this.telBox.Location = new System.Drawing.Point(471, 123);
+            this.telBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.telBox.Mask = "+ 000 000 000 000";
             this.telBox.Name = "telBox";
-            this.telBox.Size = new System.Drawing.Size(134, 22);
+            this.telBox.Size = new System.Drawing.Size(199, 30);
             this.telBox.TabIndex = 26;
             // 
             // nomMereBox
             // 
             this.nomMereBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomMereBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.nomMereBox.Location = new System.Drawing.Point(314, 146);
+            this.nomMereBox.Location = new System.Drawing.Point(471, 225);
+            this.nomMereBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nomMereBox.Name = "nomMereBox";
-            this.nomMereBox.Size = new System.Drawing.Size(134, 22);
+            this.nomMereBox.Size = new System.Drawing.Size(199, 30);
             this.nomMereBox.TabIndex = 25;
             this.nomMereBox.TabStop = false;
             this.nomMereBox.Text = "Nom Mère";
@@ -560,9 +611,10 @@
             this.nomMereLab.BackColor = System.Drawing.Color.Transparent;
             this.nomMereLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomMereLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomMereLab.Location = new System.Drawing.Point(224, 146);
+            this.nomMereLab.Location = new System.Drawing.Point(336, 225);
+            this.nomMereLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nomMereLab.Name = "nomMereLab";
-            this.nomMereLab.Size = new System.Drawing.Size(85, 21);
+            this.nomMereLab.Size = new System.Drawing.Size(131, 32);
             this.nomMereLab.TabIndex = 24;
             this.nomMereLab.Text = "Nom Mère";
             // 
@@ -570,9 +622,10 @@
             // 
             this.nomPereBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nomPereBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.nomPereBox.Location = new System.Drawing.Point(314, 106);
+            this.nomPereBox.Location = new System.Drawing.Point(471, 163);
+            this.nomPereBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nomPereBox.Name = "nomPereBox";
-            this.nomPereBox.Size = new System.Drawing.Size(134, 22);
+            this.nomPereBox.Size = new System.Drawing.Size(199, 30);
             this.nomPereBox.TabIndex = 23;
             this.nomPereBox.TabStop = false;
             this.nomPereBox.Text = "Nom Père";
@@ -585,9 +638,10 @@
             this.nomPereLab.BackColor = System.Drawing.Color.Transparent;
             this.nomPereLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomPereLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomPereLab.Location = new System.Drawing.Point(224, 112);
+            this.nomPereLab.Location = new System.Drawing.Point(336, 172);
+            this.nomPereLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nomPereLab.Name = "nomPereLab";
-            this.nomPereLab.Size = new System.Drawing.Size(80, 21);
+            this.nomPereLab.Size = new System.Drawing.Size(122, 32);
             this.nomPereLab.TabIndex = 22;
             this.nomPereLab.Text = "Nom Père";
             // 
@@ -597,9 +651,10 @@
             this.telLab.BackColor = System.Drawing.Color.Transparent;
             this.telLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.telLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telLab.Location = new System.Drawing.Point(224, 77);
+            this.telLab.Location = new System.Drawing.Point(336, 118);
+            this.telLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.telLab.Name = "telLab";
-            this.telLab.Size = new System.Drawing.Size(30, 21);
+            this.telLab.Size = new System.Drawing.Size(47, 32);
             this.telLab.TabIndex = 20;
             this.telLab.Text = "Tel";
             // 
@@ -609,9 +664,10 @@
             this.addresseLab.BackColor = System.Drawing.Color.Transparent;
             this.addresseLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addresseLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addresseLab.Location = new System.Drawing.Point(224, 41);
+            this.addresseLab.Location = new System.Drawing.Point(336, 63);
+            this.addresseLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.addresseLab.Name = "addresseLab";
-            this.addresseLab.Size = new System.Drawing.Size(74, 21);
+            this.addresseLab.Size = new System.Drawing.Size(112, 32);
             this.addresseLab.TabIndex = 18;
             this.addresseLab.Text = "Addresse";
             // 
@@ -619,9 +675,10 @@
             // 
             this.addresseBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addresseBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.addresseBox.Location = new System.Drawing.Point(314, 42);
+            this.addresseBox.Location = new System.Drawing.Point(471, 65);
+            this.addresseBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addresseBox.Name = "addresseBox";
-            this.addresseBox.Size = new System.Drawing.Size(134, 22);
+            this.addresseBox.Size = new System.Drawing.Size(199, 30);
             this.addresseBox.TabIndex = 19;
             this.addresseBox.TabStop = false;
             this.addresseBox.Text = "Addresse Etudiant";
@@ -638,9 +695,10 @@
             "Marié(e)",
             "Divorcé(e)",
             "Compliqué(e)"});
-            this.etatCivilBox.Location = new System.Drawing.Point(18, 341);
+            this.etatCivilBox.Location = new System.Drawing.Point(27, 525);
+            this.etatCivilBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.etatCivilBox.Name = "etatCivilBox";
-            this.etatCivilBox.Size = new System.Drawing.Size(134, 28);
+            this.etatCivilBox.Size = new System.Drawing.Size(199, 37);
             this.etatCivilBox.TabIndex = 17;
             this.etatCivilBox.TabStop = false;
             // 
@@ -650,9 +708,10 @@
             this.etatCivilLab.BackColor = System.Drawing.Color.Transparent;
             this.etatCivilLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.etatCivilLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.etatCivilLab.Location = new System.Drawing.Point(16, 317);
+            this.etatCivilLab.Location = new System.Drawing.Point(24, 488);
+            this.etatCivilLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.etatCivilLab.Name = "etatCivilLab";
-            this.etatCivilLab.Size = new System.Drawing.Size(77, 21);
+            this.etatCivilLab.Size = new System.Drawing.Size(113, 32);
             this.etatCivilLab.TabIndex = 16;
             this.etatCivilLab.Text = "Etat civil";
             // 
@@ -660,9 +719,10 @@
             // 
             this.lieuBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lieuBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lieuBox.Location = new System.Drawing.Point(20, 286);
+            this.lieuBox.Location = new System.Drawing.Point(30, 440);
+            this.lieuBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lieuBox.Name = "lieuBox";
-            this.lieuBox.Size = new System.Drawing.Size(148, 22);
+            this.lieuBox.Size = new System.Drawing.Size(220, 30);
             this.lieuBox.TabIndex = 15;
             this.lieuBox.TabStop = false;
             this.lieuBox.Text = "Lieu de naissance";
@@ -675,20 +735,22 @@
             this.lieuLab.BackColor = System.Drawing.Color.Transparent;
             this.lieuLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lieuLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lieuLab.Location = new System.Drawing.Point(16, 262);
+            this.lieuLab.Location = new System.Drawing.Point(24, 403);
+            this.lieuLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lieuLab.Name = "lieuLab";
-            this.lieuLab.Size = new System.Drawing.Size(134, 21);
+            this.lieuLab.Size = new System.Drawing.Size(206, 32);
             this.lieuLab.TabIndex = 14;
             this.lieuLab.Text = "Lieu de Naissance";
             // 
             // dateBox
             // 
             this.dateBox.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateBox.Location = new System.Drawing.Point(18, 239);
+            this.dateBox.Location = new System.Drawing.Point(27, 368);
+            this.dateBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateBox.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dateBox.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             this.dateBox.Name = "dateBox";
-            this.dateBox.Size = new System.Drawing.Size(120, 20);
+            this.dateBox.Size = new System.Drawing.Size(178, 26);
             this.dateBox.TabIndex = 13;
             this.dateBox.TabStop = false;
             this.dateBox.Value = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
@@ -699,9 +761,10 @@
             this.dateLab.BackColor = System.Drawing.Color.Transparent;
             this.dateLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.dateLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLab.Location = new System.Drawing.Point(14, 215);
+            this.dateLab.Location = new System.Drawing.Point(21, 331);
+            this.dateLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLab.Name = "dateLab";
-            this.dateLab.Size = new System.Drawing.Size(137, 21);
+            this.dateLab.Size = new System.Drawing.Size(212, 32);
             this.dateLab.TabIndex = 12;
             this.dateLab.Text = "Date de Naissance";
             // 
@@ -711,9 +774,10 @@
             this.genreLab.BackColor = System.Drawing.Color.Transparent;
             this.genreLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.genreLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genreLab.Location = new System.Drawing.Point(14, 182);
+            this.genreLab.Location = new System.Drawing.Point(21, 280);
+            this.genreLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.genreLab.Name = "genreLab";
-            this.genreLab.Size = new System.Drawing.Size(52, 21);
+            this.genreLab.Size = new System.Drawing.Size(79, 32);
             this.genreLab.TabIndex = 8;
             this.genreLab.Text = "Genre";
             // 
@@ -723,9 +787,10 @@
             this.prenomLab.BackColor = System.Drawing.Color.Transparent;
             this.prenomLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.prenomLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenomLab.Location = new System.Drawing.Point(14, 147);
+            this.prenomLab.Location = new System.Drawing.Point(21, 226);
+            this.prenomLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.prenomLab.Name = "prenomLab";
-            this.prenomLab.Size = new System.Drawing.Size(65, 21);
+            this.prenomLab.Size = new System.Drawing.Size(98, 32);
             this.prenomLab.TabIndex = 6;
             this.prenomLab.Text = "Prenom";
             // 
@@ -735,9 +800,10 @@
             this.postNomLab.BackColor = System.Drawing.Color.Transparent;
             this.postNomLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.postNomLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.postNomLab.Location = new System.Drawing.Point(14, 113);
+            this.postNomLab.Location = new System.Drawing.Point(21, 174);
+            this.postNomLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.postNomLab.Name = "postNomLab";
-            this.postNomLab.Size = new System.Drawing.Size(78, 21);
+            this.postNomLab.Size = new System.Drawing.Size(119, 32);
             this.postNomLab.TabIndex = 4;
             this.postNomLab.Text = "Post-nom";
             // 
@@ -747,9 +813,10 @@
             this.nomLab.BackColor = System.Drawing.Color.Transparent;
             this.nomLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.nomLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomLab.Location = new System.Drawing.Point(14, 78);
+            this.nomLab.Location = new System.Drawing.Point(21, 120);
+            this.nomLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nomLab.Name = "nomLab";
-            this.nomLab.Size = new System.Drawing.Size(45, 21);
+            this.nomLab.Size = new System.Drawing.Size(68, 32);
             this.nomLab.TabIndex = 2;
             this.nomLab.Text = "Nom";
             // 
@@ -759,9 +826,10 @@
             this.matriculeLab.BackColor = System.Drawing.Color.Transparent;
             this.matriculeLab.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.matriculeLab.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.matriculeLab.Location = new System.Drawing.Point(14, 42);
+            this.matriculeLab.Location = new System.Drawing.Point(21, 65);
+            this.matriculeLab.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.matriculeLab.Name = "matriculeLab";
-            this.matriculeLab.Size = new System.Drawing.Size(75, 21);
+            this.matriculeLab.Size = new System.Drawing.Size(115, 32);
             this.matriculeLab.TabIndex = 0;
             this.matriculeLab.Text = "Matricule";
             // 
@@ -772,9 +840,10 @@
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(216, 9);
+            this.label1.Location = new System.Drawing.Point(324, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(475, 27);
+            this.label1.Size = new System.Drawing.Size(710, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "ESPACE IDENTIFICATION ET INSCRIPTION";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -784,9 +853,10 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.CausesValidation = false;
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(530, 18);
+            this.textBox1.Location = new System.Drawing.Point(795, 28);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(10, 13);
+            this.textBox1.Size = new System.Drawing.Size(15, 19);
             this.textBox1.TabIndex = 10000;
             this.textBox1.TabStop = false;
             this.textBox1.Visible = false;
@@ -796,9 +866,10 @@
             this.minimize.BackColor = System.Drawing.Color.MidnightBlue;
             this.minimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minimize.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.minimize.Location = new System.Drawing.Point(880, -2);
+            this.minimize.Location = new System.Drawing.Point(1320, -3);
+            this.minimize.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.minimize.Name = "minimize";
-            this.minimize.Size = new System.Drawing.Size(49, 41);
+            this.minimize.Size = new System.Drawing.Size(74, 63);
             this.minimize.TabIndex = 67;
             this.minimize.Text = "-";
             this.minimize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -807,17 +878,19 @@
             // 
             // Inscription
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(926, 545);
+            this.ClientSize = new System.Drawing.Size(1389, 838);
             this.Controls.Add(this.minimize);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Inscription";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscription";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Inscription_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -884,6 +957,7 @@
         private System.Windows.Forms.Button printCard;
         private System.Windows.Forms.Button btnImage;
         private System.Windows.Forms.Button minimize;
+        private System.Windows.Forms.Button btnModifier;
     }
 }
 
